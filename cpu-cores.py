@@ -9,8 +9,8 @@ def generate_core(core_num, core_id):
     id = "[Face-{}]".format(core_id)
     core += id + "[Appearance]\n"
     core += "chartFace=org.kde.ksysguard.linechart\n"
-    core += "showTitle=false\n"
-    core += "title=\n\n"
+    core += "showTitle=true\n"
+    core += "title=Core {}\n\n".format(core_num)
 
     core += id + "[SensorColors]\n"
     core += "cpu/cpu{}/usage=233,224,61\n\n".format(core_num)
